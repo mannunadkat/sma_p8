@@ -7,13 +7,12 @@
   
   <!-- ========================================================= -->
   <!-- 1. GOOGLE ANALYTICS 4 (GA4) TRACKING TAG                  -->
-  <!-- Replace 'G-XXXXXXXXXX' with your actual GA4 Measurement ID -->
   <!-- ========================================================= -->
   <script>
     // Check localStorage or URL query param for dynamic GA ID testing
     const urlParams = new URLSearchParams(window.location.search);
     const storedId = localStorage.getItem('ga4_measurement_id');
-    const GA_ID = urlParams.get('ga') || storedId || 'G-XXXXXXXXXX';
+    const GA_ID = urlParams.get('ga') || storedId || 'G-SWT3H21X22';
     window.CURRENT_GA_ID = GA_ID;
 
     // Load Google Analytics Tag
